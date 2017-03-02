@@ -79,6 +79,7 @@ router.post('/register', function(req, res){
       name: req.body.name,
       profile_pic: req.body.profile_pic,
     });
+    user_session = req.body.email;
     console.log('Pending..');
     console.log(newUser);
 
